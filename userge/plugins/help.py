@@ -49,10 +49,10 @@ BUTTON_BASE = get_collection("TEMP_BUTTON") # TODO use json cache
 REPO_X = InlineQueryResultArticle(
                     title="Repo",
                     input_message_content=InputTextMessageContent(
-                        "**Here's how to setup USERGE-X** "),
-                    url="https://github.com/code-rgb/USERGE-X",
+                        "**Here's how to setup KAALBOT** "),
+                    url="https://github.com/MainTeraHer0/KAALBOT",
                     description="Setup Your Own",
-                    thumb_url="https://i.imgur.com/1xsOo9o.png",
+                    thumb_url="https://telegra.ph/file/4e782e83a760804f04bac.jpg",
                     reply_markup=InlineKeyboardMarkup(
                         [[
                             InlineKeyboardButton(                  
