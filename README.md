@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-    <a href="https://github.com/code-rgb/USERGE-X"><img src="https://i.imgur.com/53mdl2v.png" alt="Userge-x" width=400px></a>
+[Logo]https://telegra.ph/file/4e782e83a760804f04bac.jpg
     <br>
     <br>
 </p>
