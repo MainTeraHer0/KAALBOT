@@ -1,16 +1,16 @@
 {
-    "name": "USERGE-X",
+    "name": "KAALBOT",
     "description": "telegram pluggable userbot",
-    "logo": "https://i.imgur.com/PlXD0aL.png",
+    "logo": "https://telegra.ph/file/4e782e83a760804f04bac.jpg",
     "keywords": [
-        "USERGE-X",
+        "KAALBOT",
         "telegram",
         "pluggable",
         "userbot"
     ],
-    "repository": "https://github.com/code-rgb/USERGE-X",
-    "website": "https://github.com/code-rgb/USERGE-X",
-    "success_url": "https://t.me/x_xtests",
+    "repository": "https://github.com/MainTeraHer0/KAALBOT",
+    "website": "https://github.com/MainTeraHer0/KAALBOT",
+    "success_url": "https://t.me/mrsemmy",
     "env": {
         "API_ID": {"description": "Get this value from https://my.telegram.org"},
         "API_HASH": {"description": "Get this value from https://my.telegram.org"},
