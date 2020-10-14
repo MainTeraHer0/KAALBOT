@@ -1,9 +1,7 @@
 
+## KAAL BOT
+ 
 
- **KAALBOT** is a Powerful , _Pluggable_ Telegram UserBot written in _Python_ using [Pyrogram](https://github.com/pyrogram/pyrogram).
-<br>
-
-<br>
 
 
 ## How To Deploy 
