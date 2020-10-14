@@ -33,15 +33,15 @@ from .misc.redditdl import reddit_thumb_link
 MEDIA_TYPE, MEDIA_URL = None, None
 PATH = "userge/xcache"
 _CATEGORY = {
-    'admin': '🙋🏻‍♂️',
+    'admin': '🙋‍♂️',
     'fun': '🎨',
     'misc': '🧩',
     'tools': '🧰',
     'utils': '🗂',
     'unofficial': '➕',
-    'temp': '♻️',
-    'plugins': '💎',
-    'bot' : '💠' 
+    'temp': '💫',
+    'plugins': '🌾',
+    'bot' : '👽' 
 }
 # Database
 SAVED_SETTINGS = get_collection("CONFIGS")
@@ -56,12 +56,12 @@ REPO_X = InlineQueryResultArticle(
                     reply_markup=InlineKeyboardMarkup(
                         [[
                             InlineKeyboardButton(                  
-                            "🔥 USERGE-X Repo",
-                            url="https://github.com/code-rgb/USERGE-X"),
+                            "☠️ KAALBOT Repo",
+                            url="https://github.com/MainTeraHer0/KAALBOT"),
                             InlineKeyboardButton(
-                            "🚀 Deploy USERGE-X",
+                            "🚀 Deploy To Heroku",
                             url=("https://heroku.com/deploy?template="
-                            "https://github.com/code-rgb/USERGE-X/tree/alpha")
+                            "https://github.com/MainTeraHer0/KAALBOT/tree/alpha")
                             )
                         ]]
                     )
@@ -79,7 +79,7 @@ async def _init() -> None:
         Config.USE_USER_FOR_CLIENT_CHECKS = bool(data['is_user'])
 
 
-@userge.on_cmd("help", about={'header': "Guide to use USERGE commands"}, allow_channels=False)
+@userge.on_cmd("help", about={'header': "Guide to use KAALBOT commands"}, allow_channels=False)
 async def helpme(message: Message) -> None:  # pylint: disable=missing-function-docstring
     plugins = userge.manager.enabled_plugins
     if not message.input_str:
@@ -172,7 +172,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
             await callback_query.answer("you are in main menu", show_alert=True)
             return
         if len(pos_list) == 2:
-            text = " 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨"
+            text = " 𝐊𝐀𝐀𝐋𝐁𝐎𝐓  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨"
             buttons = main_menu_buttons()
         elif len(pos_list) == 3:
             text, buttons = category_data(cur_pos)
@@ -219,7 +219,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
     @check_owner
     async def callback_mm(callback_query: CallbackQuery):
         await callback_query.edit_message_text(
-            " 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 ", reply_markup=InlineKeyboardMarkup(main_menu_buttons()))
+            " 𝐊𝐀𝐀𝐋𝐁𝐎𝐓  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 ", reply_markup=InlineKeyboardMarkup(main_menu_buttons()))
 
     @ubot.on_callback_query(filters.regex(pattern=r"^chgclnt$"))
     @check_owner
@@ -266,9 +266,9 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
             pairs = pairs[current_page*rows:(current_page + 1)*rows] + [
                 [
                     InlineKeyboardButton(
-                        "⏪ Previous", callback_data=f"({cur_pos})prev({current_page})".encode()),
+                        "👾 Previous", callback_data=f"({cur_pos})prev({current_page})".encode()),
                     InlineKeyboardButton(
-                        "⏩ Next", callback_data=f"({cur_pos})next({current_page})".encode())],
+                        "👾 Next", callback_data=f"({cur_pos})next({current_page})".encode())],
             ]
         pairs += default_buttons(cur_pos)
         return pairs
@@ -285,7 +285,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                 "⬅ Back", callback_data=f"back({cur_pos})".encode()))
             if len(cur_pos.split('|')) > 2:
                 tmp_btns.append(InlineKeyboardButton(
-                    "🖥 Main Menu", callback_data="mm".encode()))
+                    "💻 Main Menu", callback_data="mm".encode()))
                 tmp_btns.append(InlineKeyboardButton(
                     "🔄 Refresh", callback_data=f"refresh({cur_pos})".encode()))
         else:
@@ -411,13 +411,13 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                 owner = [[
                         InlineKeyboardButton(
                         text="Contact", 
-                        url="https://t.me/deleteduser420"
+                        url="https://t.me/Mrsemmy"
                         )
                 ]]
                 results.append(
                         InlineQueryResultPhoto(
                             photo_url="https://coverfiles.alphacoders.com/123/123388.png",
-                            caption="Hey I solved **𝚂𝚢𝚗𝚝𝚊𝚡's ░ Σrr♢r**",
+                            caption="Hey I solved **KAALBOT**",
                             reply_markup=InlineKeyboardMarkup(owner)
                         )
                 )
@@ -679,8 +679,8 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                     json.dump(d, open(opinion,'w'))
 
                 buttons = [[
-                        InlineKeyboardButton("👍", callback_data=f"op_y_{inline_query.id}"),
-                        InlineKeyboardButton("👎", callback_data=f"op_n_{inline_query.id}")
+                        InlineKeyboardButton("📤", callback_data=f"op_y_{inline_query.id}"),
+                        InlineKeyboardButton("📥", callback_data=f"op_n_{inline_query.id}")
                 ]]                           
                 results.append(
                         InlineQueryResultArticle(
@@ -780,9 +780,9 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                     )
             MAIN_MENU = InlineQueryResultArticle(
                         title="Main Menu",
-                        input_message_content=InputTextMessageContent(" 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 "),
-                        url="https://github.com/code-rgb/USERGE-X",
-                        description="Userge-X Main Menu",
+                        input_message_content=InputTextMessageContent(" 𝐊𝐀𝐀𝐋𝐁𝐎𝐓  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 "),
+                        url="https://github.com/MainTeraHer0/KAALBOT",
+                        description="KAALBOT Main Menu",
                         thumb_url="https://i.imgur.com/1xsOo9o.png",
                         reply_markup=InlineKeyboardMarkup(main_menu_buttons())
                     )           
