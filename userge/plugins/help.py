@@ -67,10 +67,10 @@ REPO_X = InlineQueryResultArticle(
                     )
             )
 # Thanks boi @FLAMEPOSEIDON
-ALIVE_IMGS = ["https://telegra.ph/file/11123ef7dff2f1e19e79d.jpg", "https://i.imgur.com/uzKdTXG.jpg",
-"https://telegra.ph/file/6ecab390e4974c74c3764.png",
-"https://telegra.ph/file/995c75983a6c0e4499b55.png",
-"https://telegra.ph/file/86cc25c78ad667ca5e691.png"]
+ALIVE_IMGS = ["https://telegra.ph/file/912696fb2abf68a1f1ef1.jpg",
+"https://telegra.ph/file/c6992e85b486dcb76d297.jpg",
+"https://telegra.ph/file/6e2861017a72cbc9be04e.jpg",
+"https://telegra.ph/file/79b7edf2aaea771fe640f.jpg"]
 
 
 async def _init() -> None:
@@ -544,11 +544,11 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                             InlineKeyboardButton(text="⚡️ REPO", url=Config.UPSTREAM_REPO)]]
 
                 alive_info = f"""
-    **[USERGE-X](https://telegram.dog/x_xtests) is Up and Running**
+    **[KAALBOT](https://github.com/MainTeraHer0/KAALBOT) is Up and Running**
 
  • 🐍 Python :  `v{versions.__python_version__}`
  • 🔥 Pyrogram :  `v{versions.__pyro_version__}`
- • 🧬 𝑿 :  `v{get_version()}`
+ • 🧬 KB :  `v{get_version()}`
 
     🕔 Uptime : {userge.uptime}
 """  
