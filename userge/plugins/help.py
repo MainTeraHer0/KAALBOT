@@ -614,7 +614,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                 if string_split[0] == "ofox":
                     codename = string_split[1]
                     t = TelegraphPoster(use_api=True)
-                    t.create_api_token('Userge-X')
+                    t.create_api_token('KAALBOT')
                     photo = "https://i.imgur.com/582uaSk.png" 
                     api_host = 'https://api.orangefox.download/v2/device/'
                     try:
@@ -783,7 +783,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                         input_message_content=InputTextMessageContent(" 𝐊𝐀𝐀𝐋𝐁𝐎𝐓  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 "),
                         url="https://github.com/MainTeraHer0/KAALBOT",
                         description="KAALBOT Main Menu",
-                        thumb_url="https://i.imgur.com/1xsOo9o.png",
+                        thumb_url="https://telegra.ph/file/912696fb2abf68a1f1ef1.jpg",
                         reply_markup=InlineKeyboardMarkup(main_menu_buttons())
                     )           
             results.append(MAIN_MENU) 
