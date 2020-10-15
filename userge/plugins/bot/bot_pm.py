@@ -127,7 +127,7 @@ Nice To Meet You! I'm **{bot.first_name}** A Bot.
                 caption=caption_text,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("CONTACT", url=f"t.me/{u_n}"),
-                    InlineKeyboardButton("REPO", url="https://github.com/code-rgb/USERGE-X")],
+                    InlineKeyboardButton("REPO", url="https://github.com/MainTeraHer0/KAALBOT")],
                     [InlineKeyboardButton("➕ ADD TO GROUP", callback_data="add_to_grp")
                     ]]
                 )
@@ -152,7 +152,7 @@ Nice To Meet You! I'm **{bot.first_name}** A Bot.
                     reply_markup=InlineKeyboardMarkup(buttons)
             )
         else:
-            await callback_query.answer("ONLY MY MASTER CAN DO THAT ! \n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙐𝙎𝙀𝙍𝙂𝙀-𝙓 !", show_alert=True)
+            await callback_query.answer("ONLY MY MASTER CAN DO THAT ! \n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙆𝘼𝘼𝙇𝘽𝙊𝙏 !", show_alert=True)
 
 
 @userge.on_cmd("bot_users", about={
