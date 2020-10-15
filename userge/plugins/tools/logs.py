@@ -22,7 +22,7 @@ _LEVELS = {
 
 
 @userge.on_cmd("logs", about={
-    'header': "check USERGE-X logs",
+    'header': "check KAALBOT logs",
     'flags': {
         '-d': "get logs in document",
         '-h': "get heroku logs",
@@ -55,12 +55,12 @@ async def check_logs(message: Message):
                     await message.edit("Failed to reach Nekobin !")
                     await message.client.send_document(chat_id=message.chat.id,
                                            document="logs/userge.log",
-                                           caption='**USERGE-X Logs**')
+                                           caption='**KAALBOT Logs**')
     else:
         await message.delete()
         await message.client.send_document(chat_id=message.chat.id,
                                            document="logs/userge.log",
-                                           caption='**USERGE-X Logs**')
+                                           caption='**KAALBOT Logs**')
 
         
 
