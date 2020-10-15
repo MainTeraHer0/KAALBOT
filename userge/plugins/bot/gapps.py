@@ -63,7 +63,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                 reply_markup=InlineKeyboardMarkup(open_g)
             )
         else:
-            await callback_query.answer("Sorry You Can't Access This!\n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙐𝙎𝙀𝙍𝙂𝙀-𝙓", show_alert=True)
+            await callback_query.answer("Sorry You Can't Access This!\n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙆𝘼𝘼𝙇𝘽𝙊𝙏", show_alert=True)
 
 
     @ubot.on_callback_query(filters.regex(pattern=r"^flame_gapps$"))
@@ -91,7 +91,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                 reply_markup=InlineKeyboardMarkup(flame_g)
             )
         else:
-            await callback_query.answer("Sorry You Can't Access This!\n\n  𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙐𝙎𝙀𝙍𝙂𝙀-𝙓", show_alert=True)
+            await callback_query.answer("Sorry You Can't Access This!\n\n  𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙆𝘼𝘼𝙇𝘽𝙊𝙏", show_alert=True)
 
 
     @ubot.on_callback_query(filters.regex(pattern=r"^nik_gapps$"))
@@ -114,7 +114,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                 reply_markup=InlineKeyboardMarkup(nik_g)
             )
         else:
-            await callback_query.answer("Sorry You Can't Access This!\n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙐𝙎𝙀𝙍𝙂𝙀-𝙓", show_alert=True)
+            await callback_query.answer("Sorry You Can't Access This!\n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙆𝘼𝘼𝙇𝘽𝙊𝙏", show_alert=True)
 
 
     @ubot.on_callback_query(filters.regex(pattern=r"^back_gapps$"))
@@ -131,4 +131,4 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
         else:
-            await callback_query.answer("Sorry You Can't Access This!\n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙐𝙎𝙀𝙍𝙂𝙀-𝙓", show_alert=True)
+            await callback_query.answer("Sorry You Can't Access This!\n\n 𝘿𝙚𝙥𝙡𝙤𝙮 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙆𝘼𝘼𝙇𝘽𝙊𝙏", show_alert=True)
