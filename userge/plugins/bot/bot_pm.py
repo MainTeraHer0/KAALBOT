@@ -45,7 +45,7 @@ if Config.BOT_TOKEN and Config.OWNER_ID:
 Hello {f_name},
 Nice To Meet You! I'm **{bot.first_name}** A Bot.
 
-        <i><b>Powered by</i> [USERGE-X](https://t.me/x_xtests)</b>
+        <i><b>Powered by</i> [KAALI](https://t.me/iamthekaali)</b>
 
 <b>My Master is: {master.first_name}</b>
 <i>You can contact my <b>Master</b> and checkout the <b>Repo</b> For more info.</i>
