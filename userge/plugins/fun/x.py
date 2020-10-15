@@ -9,7 +9,7 @@ import os
 import random
 
 
-@userge.on_cmd("x", about={'header': "USERGE-X",
+@userge.on_cmd("x", about={'header': "kaalbot",
         'flags': {
         '-alt': "To get inverted X"}}, check_downpath=True)
 async def usx_(message: Message):
